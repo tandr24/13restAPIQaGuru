@@ -1,0 +1,21 @@
+plugins {
+    id 'java-library'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.13.0'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+    testRuntimeOnly 'org.slf4j:slf4j-simple:2.0.17'
+    testImplementation 'io.rest-assured:rest-assured:5.5.0'
+    testImplementation 'com.fasterxml.jackson.core:jackson-databind:2.18.0'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+
